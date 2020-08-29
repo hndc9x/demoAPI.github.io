@@ -1,0 +1,118 @@
+#box {
+  padding:10px;
+  width:200px;
+  z-index:10;
+  position:relative;
+}
+#box form {
+ background:white;
+ padding:5px;
+ display:none;
+ position:absolute;
+ top:27px;
+}
+#button {
+  width:100px;
+  background:green;
+  color:black;
+  padding:10px 60px;
+  border:1px solid #006699;
+  margin-bottom:15px;
+  cursor:pointer;
+}
+
+
+ /* new page */
+#box1 {
+  padding:10px;
+  width:200px;
+  z-index:10;
+  position:absolute;
+  right: 0px;
+  top: 50px;
+}
+#box1 form {
+ background:white;
+ padding:5px;
+ display:none;
+ position:absolute;
+ top:27px;
+}
+#button1 {
+  width:100px;
+  background:white;
+  color:black;
+  padding:10px 60px;
+  border:1px solid #006699;
+  margin-bottom:15px;
+  cursor:pointer;
+}
+
+/* choose skill */
+#box2 {
+  padding:10px;
+  width:200px;
+  z-index:10;
+  position:absolute;
+  top:9px;
+}
+#box2 form {
+ background:white;
+ padding:5px;
+ display:none;
+ position:absolute;
+ top:27px;
+}
+#button2 {
+  width:100px;
+  background:white;
+  color:black;
+  padding:10px 60px;
+  border:1px solid #006699;
+  margin-bottom:15px;
+  cursor:pointer;
+}
+
+input[type="submit"] {
+  background:none;
+  color:#fff;
+  border:none;
+  text-align:left;
+  cursor:pointer;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}

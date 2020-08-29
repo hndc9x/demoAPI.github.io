@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="icon" href="images/logo.png" type="image/ico" />
+    <title>Admin</title>
+    <!-- js/css -->
+    <!--CSS -->
+    <link href="css/search.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Select -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Datatables -->
+
+   <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+   <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+   <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+   <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+   <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="clearfix"></div>
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+              <a href="index.html" ><img src="images/profile.png" alt="..." class="img-circle profile_img"></a>
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>Admin</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+            <br/>
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-building"></i>Manager<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="Certificate.html">Certificate</a></li>
+                      <li><a href="exam.html">Exam</a></li>
+                      <li><a href="Skill.html">Skill</a></li>
+                      <li><a href="category.html">Category</a></li>
+                      <li><a href="Class.html">Class</a></li>
+                      <li><a href="manage_user.html">User</a></li>
+                      <li><a href="add_edit_detail.html">Add Questions</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class='fas fa-user-circle' style='font-size:20px'></i>&ensp;Profile<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="profile.html">Infomation Profile</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-check"></i>Quiz<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#">HTML</a></li>
+                      <li><a href="#">CSS</a></li>
+                      <li><a href="#">JS</a></li>
+                      <li><a href="#">Math</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../Screens_User/index.html"><i class="fa fa-eye"></i>View Website</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <nav class="nav navbar-nav">
+              <ul class=" navbar-right">
+                <li class="nav-item dropdown open" style="padding-left: 15px;">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/profile.png" alt="">Admin
+                  </a>
+                  <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                    <a href="profile.html" class="dropdown-item"  href="javascript:;"> Profile</a>
+                    <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                  </div>
+                </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+              </div>
+              <div class="title_right">
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row">
+              <div class="col-md-12 col-sm-12 ">
+                <div class="x_panel">
+                    <div class="x_title">
+                      <h3>Manage User</h3>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <div style="text-align: right;position: absolute;right:25px;top:15px;">
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </div>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <div >
+                      <!--POPUPADDNEWUSER-->
+                      <button type="button" class="btn btn-success" data-toggle="modal"data-target="#exampleModalCenter"><i class="fa fa-plus"></i> Add new user</button>
+                      <input id="EnterID" type="text" placeholder="Nhập ID trước khi thao tác Edit ,Delete và Details" style="width:380px;"  class="form-control"name="" value="">
+                      <p></p>
+                    </div>
+                      <!-- Modal  -->
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h3>Add New User</h3>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                  <!--body popup-->
+                                  <style>
+                                    .form-control{
+                                      height: 36px;
+                                      width: 300px;
+                                      border-color: grey;
+                                    }
+                                  </style>
+                                  <form class="was-validated">
+                                  <div class="x_content">
+                                    <div class="col-md-9 col-sm-9 ">
+                                      <div class="field item form-group">
+                                        <label class="col-form-label col-md-3 col-sm-3  label-align">ID<span class="required" title="Bắt buộc" style="color: red;">*</span></label>
+                                        <div class="col-md-6 col-sm-6">
+                                            <input id="idusername" placeholder="Nhập UserName trước khi get ID" readonly class="form-control" type="text"    maxlength="10" required="required" /></div>
+                                    </div>
+                                        <div class="item form-group">
+                                            <label  class="col-form-label col-md-3 col-sm-3  label-align">UserName<span class="required" title="Bắt buộc" style="color: red;">*</span></label>
+                                            <div class="col-md-6 col-sm-6">
+                                                <input id="P_username" class="form-control" type="text"  required="required" /></div>
+                                        </div>
+                                        <div class="item form-group">
+                                            <label class="col-form-label col-md-3 col-sm-3  label-align">FullName<span class="required" title="Bắt buộc" style="color: red;">*</span></label>
+                                            <div class="col-md-6 col-sm-6">
+                                                <input id="P_fullname" class="form-control" type="text"    required="required" /></div>
+                                        </div>
+                                        <div class="item form-group">
+                                          <label class="col-form-label col-md-3 col-sm-3  label-align">Email</label>
+                                          <div class="col-md-6 col-sm-6">
+                                              <input id="P_email" class="form-control" type="email"  maxlength="50"    required="required" /></div>
+                                      </div>
+
+                                      <div class="field item form-group">
+                                        <label class="col-form-label col-md-3 col-sm-3  label-align">Birthdate</label>
+                                        <div class="col-md-6 col-sm-6">
+                                          <input id="P_brithday"class="form-control" type="date"required="required" />
+                                          </div>
+                                      </div>
+                                    <div class="field item form-group">
+                                      <label class="col-form-label col-md-3 col-sm-3  label-align">Phone<span class="required" title="Bắt buộc" style="color: red;">*</span></label>
+                                      <div class="col-md-6 col-sm-6">
+                                          <input id="P_phone" class="form-control" type="text"    maxlength="10" required="required" /></div>
+                                  </div>
+                                        <div class="field item form-group">
+                                          <label class="col-form-label col-md-3 col-sm-3  label-align">Class<span class="required" title="Bắt buộc" style="color: red;">*</span></label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <select id="getclassedit" class="form-control">
+                                            </select>
+                                          </div>
+                                  </div>
+                                </div>
+                              </form>
+                                  <!-- end body popup-->
+                    <!-- footer cua popup -->
+                    </div>
+                    <div class="modal-footer">
+
+                                <button data-dismiss="modal" type="button" class="btn btn-light">Cancle</button>
+                                <button onclick="GetIDUser();"  type="button" class="btn btn-success">Get ID</button>
+                                <button onclick="Add();"  type="button" class="btn btn-success" data-dismiss='modal'>Add</button>
+                              <!--POPUP ADD-->
+                              <!-- <button  type="button"  style="background-color: green; width:120px;height:35px;border: none;position: relative;right:130px" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1"> Add</button> -->
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                  </div>
+                  <div class="x_content">
+                      <div class="row">
+                          <div class="col-sm-12">
+                            <div class="card-box table-responsive">
+                    <table id="table" class="table table-striped table-bordered" style="width:100%">
+                    </table>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <button  data-toggle="modal" data-target="#exampleModalLong1" onclick="getDataById();" type="button" name="button" class="btn btn-primary">Edit</button>
+            <button  data-toggle="modal" data-target="#exampleModalCenter3" onclick="Details()" type="button" name="button" class="btn btn-success">Details</button>
+            <button data-toggle="modal" data-target="#DeleteConfirm" onclick ="getDataById();" type="button" name="button" class="btn btn-danger">Delete</button>
+                </div>
+              </div>
+              <!--POPUPEDITUDER-->
+<div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div  class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="color: grey;"  id="exampleModalLabel">Edit User Profile</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="x_content">
+          <div class="col-md-9 col-sm-9 ">
+              <div class="item form-group">
+                  <label  class="col-form-label col-md-3 col-sm-3  label-align">UserName<span class="required" title="Bắt buộc" style="color: red;">*</span></label>
+                  <div class="col-md-6 col-sm-6">
+                      <input id="Put_username" class="form-control" type="text"  required="required" /></div>
+              </div>
+              <div class="field item form-group">
+                <label class="col-form-label col-md-3 col-sm-3  label-align">Class<span class="required" title="Bắt buộc" style="color: red;">*</span></label>
+                <div class="col-md-6 col-sm-6">
+                  <select id="getclassedit1" class="form-control">
+                  </select>
+                </div>
+        </div>
+      </div>
+        <!-- end body popup-->
+<!-- footer cua popup -->
+</div>
+      </div>
+      <div  class="modal-footer">
+        <button onclick="Update();" class="btn btn-success" type="button" name="button" data-dismiss='modal'>Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- end popup edit -->
+        <!-- pop delete -->
+        <div class="modal fade" id="DeleteConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered" role="document">
+   <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLongTitle">Delete</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+       </div>
+       <div style="min-height:100px;" class="modal-body">
+         <center>
+           <label>Are You Sure to delete this data?</label>
+         </center>
+         <div>
+           <div class="form-group">
+             <input hidden id="D_idusername" class="form-control">
+           </div>
+           <input type="submit" id="btndelete" style="background-color: green;position: absolute;left:150px;border: none;" value="Yes" onclick="Delete();" class="btn btn-secondary" >
+           <button style="background-color: grey;position: absolute;right:150px;border: none;" type="button" class="btn btn-primary">No</button>
+         </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+    <!-- pop Details -->
+    <!-- Modal  -->
+    <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Details User</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <!--body popup-->
+                <style>
+                  .form-control{
+                    height: 36px;
+                    width: 300px;
+                    border-color: grey;
+                  }
+                </style>
+                <div class="x_content">
+                  <div class="col-md-9 col-sm-9 ">
+                    <div class="field item form-group">
+                      <label class="col-form-label col-md-3 col-sm-3  label-align">ID<span class="required" title="Bắt buộc" style="color: red;">*</span></label>
+                      <div class="col-md-6 col-sm-6">
+                          <input id="D_id" readonly class="form-control" type="text"    maxlength="10" required="required" /></div>
+                  </div>
+                      <div class="item form-group">
+                          <label  class="col-form-label col-md-3 col-sm-3  label-align">UserName<span class="required" title="Bắt buộc" style="color: red;">*</span></label>
+                          <div class="col-md-6 col-sm-6">
+                              <input id="D_username" readonly class="form-control" type="text"  required="required" /></div>
+                      </div>
+                      <div class="item form-group">
+                          <label class="col-form-label col-md-3 col-sm-3  label-align">FullName<span class="required" title="Bắt buộc" style="color: red;">*</span></label>
+                          <div class="col-md-6 col-sm-6">
+                              <input id="D_fullname" readonly class="form-control" type="text"    required="required" /></div>
+                      </div>
+                      <div class="item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3  label-align">Email</label>
+                        <div class="col-md-6 col-sm-6">
+                            <input id="D_email" readonly class="form-control" type="email"  maxlength="50"    required="required" /></div>
+                    </div>
+
+                    <div class="field item form-group">
+                      <label class="col-form-label col-md-3 col-sm-3  label-align">Birthdate</label>
+                      <div class="col-md-6 col-sm-6">
+                        <input id="D_brithday" readonly class="form-control" type="date"required="required" />
+                        </div>
+                    </div>
+                  <div class="field item form-group">
+                    <label class="col-form-label col-md-3 col-sm-3  label-align">Phone<span class="required" title="Bắt buộc" style="color: red;">*</span></label>
+                    <div class="col-md-6 col-sm-6">
+                        <input id="D_phone" readonly class="form-control" type="text"    maxlength="10" required="required" /></div>
+                </div>
+                      <div class="field item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3  label-align">Class<span class="required" title="Bắt buộc" style="color: red;">*</span></label>
+                        <div class="col-md-6 col-sm-6">
+                            <input id="D_class" readonly class="form-control" type="text"    maxlength="10" required="required" /></div>
+                        </div>
+                </div>
+
+              </div>
+                <!-- end body popup-->
+  <!-- footer cua popup -->
+  </div>
+  <div class="modal-footer">
+
+          <div class="col-md-6 offset-md-3">
+            <button data-dismiss="modal" type="button" class="btn btn-light">Cancle</button>
+            <button data-dismiss="modal" data-toggle="modal" data-target="#exampleModalLong1" onclick="getDataById();" type="button" class="btn btn-primary">Edit</button>
+            <!--POPUP ADD-->
+            <!-- <button  type="button"  style="background-color: green; width:120px;height:35px;border: none;position: relative;right:130px" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1"> Add</button> -->
+        </div>
+
+  </div>
+  </div>
+</div>
+</div>
+</div>
+            <!--POPUP ADD-->
+        <footer>
+          <div class="pull-right">
+            <p><b>Ok My friend</b></p>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+
+    <!-- add js -->
+    <script src="js/userajax.js"></script>
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Datatables -->
+    <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="../vendors/jszip/dist/jszip.min.js"></script>
+    <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+    <script>
+      var popup = $('#popup'),
+    select = $('#slct');
+    $('#popup #close').on('click', function(evt){
+    evt.preventDefault();
+    popup.hide();
+    });
+
+    select.on('change', function(){
+    popup.show();
+    });
+
+    </script>
+    <!-- test -->
+<!--POPUPDETAIL-->
+    <!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">View User Profile</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="x_content">
+
+          <div class="col-md-3 col-sm-3  profile_left">
+            <div class="profile_img">
+              <div id="crop-avatar">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-9 ">
+
+            <form class="" action="" method="post" novalidate>
+              <div class="field item form-group">
+                  <label  class="col-form-label col-md-3 col-sm-3  label-align">UserName</label>
+                  <div class="col-md-6 col-sm-6">
+                      <input  class="form-control" type="text"  required="required" /></div>
+              </div>
+              <div class="field item form-group">
+                  <label class="col-form-label col-md-3 col-sm-3  label-align">Full Name</label>
+                  <div class="col-md-6 col-sm-6">
+                      <input class="form-control" type="text"    required="required" /></div>
+              </div>
+              <div class="field item form-group">
+                  <label class="col-form-label col-md-3 col-sm-3  label-align">Password</label>
+                  <div class="col-md-6 col-sm-6">
+                      <input class="form-control" type="text"  minlength="3" maxlength="16"   required="required" /></div>
+
+              </div>
+              <div class="field item form-group">
+                <label class="col-form-label col-md-3 col-sm-3  label-align">Address</label>
+                <div class="col-md-6 col-sm-6">
+                    <input class="form-control" type="email"  maxlength="50"    required="required" /></div>
+            </div>
+
+            <div class="field item form-group">
+              <label class="col-form-label col-md-3 col-sm-3  label-align">Birthdate</label>
+              <div class="col-md-6 col-sm-6">
+               <input class="form-control" type="date"required="required" />
+                </div>
+            </div>
+          <div class="field item form-group">
+            <label class="col-form-label col-md-3 col-sm-3  label-align">Phone</label>
+            <div class="col-md-6 col-sm-6">
+                <input class="form-control" type="text"    maxlength="10" required="required" /></div>
+        </div>
+           <div class="field item form-group">
+                <label class="col-form-label col-md-3 col-sm-3  label-align">Class</label>
+                <div class="col-md-6 col-sm-6">
+                  <select class="browser-default custom-select">
+                    <option selected=""></option>
+                    <option value="1">HCM20_CPL_NET_05</option>
+                    <option value="2">HCM20_CPL_NET_04</option>
+                    <option value="3">HCM20_CPL_JAVA_05</option>
+                    <option value="4">HCM20_CPL_JAVA_04</option>
+                  </select>
+                </div>
+          </form>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button data-toggle="modal" data-target="#exampleModalLong2"  style="background-color: green;width: 100px;" type="button" class="btn btn-secondary" data-dismiss="modal">Edit</button>
+        <button style="background-color:grey;border: none;" type="button"  class="btn btn-primary">Cancle</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
